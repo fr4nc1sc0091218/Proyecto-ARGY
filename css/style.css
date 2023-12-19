@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* font-family: 'Playfair Display', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+.titulo{
+    font-size: 3rem;
+}
+.banner {
+    background-image: url(../images/monedaarbol.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    color: black; 
+    text-align: center;
+}
+
+header{
+    background-color: #0A0439;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+header img {
+    display: flex;
+    width: 100px;
+    margin-left: 20px;
+}
+nav {
+    /*sin puntos*/
+    width: 50%;
+}
+header ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    /* sin subrayado */
+    font-size: 1,5rem;
+}
+header a:hover {
+    color: rgb(32, 189, 97);
+}
+/*presentacion*/
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.valores {
+    background-color: #0A0439;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+}
+.opciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+}
+.opciones li {
+    border: 5px solid rgb(32, 189, 97);
+}
+section h2 {
+    text-align: center;
+}
+
+/* pie de pagina */
+footer {
+    background-color: #0A0439;
+    color: white;
+} 
+footer img{
+    width: 35px;
+}
+footer{
+    background-color: #0A0439;
+}
+footer p{
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+}
+footer div {
+    padding: 10px;;
+}
+/* asesoria */
+.asesoria .research {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+}
+.imgOpciones {
+    width: 20%;
+}
+
+/* MEDIA QUERY */
+/*celular*/
+@media screen and (max-width: 480px) {
+    /*header*/
+    header {
+        flex-direction: column;
+    }
+    nav {
+        width: 90%;
+    }
+    header a {
+        font-size: 1rem;
+    }
+    /*section*/
+    .opciones {
+       
+    }
+    /*footer*/
+    footer {
+
+    }
+}
